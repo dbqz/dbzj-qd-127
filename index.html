@@ -41,6 +41,18 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #06b6d4; 
       }
+      
+      /* Scanning line animation */
+      @keyframes scan {
+        0%, 100% {
+          transform: translateY(0);
+          opacity: 0.2;
+        }
+        50% {
+          transform: translateY(100vh);
+          opacity: 0.8;
+        }
+      }
     </style>
   <script type="importmap">
 {
@@ -55,5 +67,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
